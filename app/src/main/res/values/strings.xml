@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Listas</string>
+    <string name="appName">Nombre de la aplicación</string>
+    <string name="devName">Nomde del desarrollador</string>
+    <string name="isInstalled">Instalada</string>
+    <string name="isNotInstalled">No Instalada</string>
+    <string name="description">Descripción</string>
+    <string name="add">Agregar</string>
+    <string name="empty">No hay aplicaciones instaladas</string>
+
+</resources>
