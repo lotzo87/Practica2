@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringTokenizer;
 
 import mx.com.idmexico.vvazquez.listas.sql.MyDbHelper;
 
@@ -31,11 +32,19 @@ public class appDataSource {
         db.insert(MyDbHelper.TABLE_APP_NAME,null,contentValues);
     }
 
-    public void deleteApp(modelListItem modelAppList)
+    public void deleteApp(int id)
     {
         db.delete(MyDbHelper.TABLE_APP_NAME,MyDbHelper.COLUMN_ID+"=?",
-                new String[]{String.valueOf(modelAppList.getId())});
+                new String[]{String.valueOf(id)});
     }
+
+    public void updateApp(int id, int value)
+        {
+            ContentValues values = new ContentValues();
+            values.put(MyDbHelper.COLUMN_INSTALLED,value);
+            db.update(MyDbHelper.TABLE_APP_NAME, values,  MyDbHelper.COLUMN_ID +"=?",
+                    new String[]{String.valueOf(id)});
+        }
 
     public List<modelListItem> getApp(int appId)
     {

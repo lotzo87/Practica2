@@ -7,5 +7,19 @@
     <string name="description">Descripción</string>
     <string name="add">Agregar</string>
     <string name="empty">No hay aplicaciones instaladas</string>
+    <string name="install">Instalar</string>
+    <string name="uninstall">Desinstalar</string>
+    <string name="uninstallnotif">Desinstalación</string>
+    <string name="updatenotif">Actualización</string>
+    <string name="open">Abrir</string>
+    <string name="update">Actualizar</string>
+    <string name="uptodate">Actualizado</string>
+    <string name="url">https://play.google.com/store</string>
+    <string name="uninstallmsg">¿Desea desinstalar la aplicacón?</string>
+    <string name="uninstallnotifmsg">Se desinstaló la aplicación </string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+
+
 
 </resources>
